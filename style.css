@@ -16,7 +16,7 @@ html{
 
 .header{
     height: 98vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('travelworld.github.io/header-image.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('.../header-image.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
