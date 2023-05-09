@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ddd;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    height: 98vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    color: white;
+    display: inline;
+    float: left;
+    margin-top: 1.5em;
+    /* margin-left: 10em; */
+    font-size: 2rem;
+}
+
+.nav-items{
+    list-style-type: none;
+    float: right;
+    font-size: 1.6rem;
+    margin-top: 1.5em;
+    /* margin-right: 15em; */
+}
+.nav-item{
+    display: inline-block;
+    padding: 0.5rem;
+    letter-spacing: 0.12 em;
+}
+
+.nav-item:hover a{
+    border-bottom: 1.5px solid white;
+    border-spacing: 0.2em;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.cleanfix{
+    clear: both;
+}
+
+/* .navbar::after{
+    content:'';
+    display: block;
+    clear: both;
+} */
+
+/* ######Utility Class##### */
+
+.container{
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.lg-text{
+    font-weight: 700;
+}
+
+.md-text{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.text-light{
+    color: white;
+}
+.text-red{
+    color: red;
+}
+/* ########### */
+
+.sub-head{
+    text-align: center;
+    margin-top: 22rem;
+    letter-spacing: 0.4rem;
+}
+
+h1{
+    display: inline-block;
+    padding-bottom: 1.5rem;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+p{
+    padding-bottom: 2.5rem;
+}
+
+.btn-primary{
+    font-size: 1.5rem;
+    /* border: 3px solid green; */
+    background-color: #fff;
+    padding: 1rem 2.2rem;
+    border-radius: 100px;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+}
+
+.btn-secondary{
+    border: 2px solid black;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 550;
+}
+
+.btn-primary:hover{
+    background-color: #ddd;
+}
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+/* ######Explore-section##### */
+
+.section{
+    padding:  2rem;
+}
+.row{
+    margin: 8rem;
+    height: 24rem;
+    box-shadow: 0 0 20px 0 #aaa;
+
+}
+
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+    background-color: #fff;
+    height: 100%;
+}
+
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+    background-color: #fff;
+    height: 100%;
+}
+
+.img-box img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-box{
+    text-align: center;
+}
+
+.text-box h2{
+    letter-spacing: 0.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+p{
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+
+/* #######Feature-Section##### */
+
+.feature{
+    height: 25rem;
+    background-color: #fcf3f2;
+    padding: 10rem 0 4rem 0;
+}
+
+.feature-row{
+    height: 20rem;
+    margin: 0 8rem;
+    background-color: white;
+    box-shadow: 0 0 20rem 0 #eee9e9;
+}
+
+.feature-row1{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+.feature-row2{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    background-color: rgb(248, 115, 88);
+    color: white;
+}
+
+.feature-row3{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+
+.feature-row::after{
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+
+h3{
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.35rem;
+}
+
+.feature-row p{
+    font-weight: 400;
+}
+
+
+
+/* #######Footer##### */
+
+.footer{
+    height: 8rem;
+    background-color: rgb(36, 35, 35);
+    padding: 2.5rem 0 0 0;
+    color: white;
+}
+
+
+.footer p{
+    color: white;
+    letter-spacing: 0.35rem;
+}
+
+.footer i{
+    font-size: xx-large;
+    padding-left: 1rem;
+
+}
+
+.footer p i{
+    color: white;
+    font-size: small;
+}
+
+.p1{
+    margin-left: 44rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.feature-row i{
+    margin: 1.2rem 0 0 13rem;
+    font-size: medium;
+}
+
+
+
+/* #### #### #### #### #### #### #### #### #####About-Page-CSS######## #### #### ######## #### #### ####  ####  */
+
+.navbar-about{
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    background-color: black;
+}
+
+.logo-about{
+    float: left;
+    font-size: 2rem;
+}
+
+.items-about{
+    float: right;
+}
+
+
+
+.items-about li{
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+}
+
+.items-about li:hover{
+    border-bottom: 0.15rem solid white;
+
+}
+
+
+/* ########section-about##### */
+
+.section-about{
+    padding: 2rem;
+}
+/* .sub-sec{
+    border: 2rem solid green;
+} */
+.list-about1{
+    float: left;
+    list-style-type: none;
+    padding-left: 10rem;
+}
+.list-about2{
+    float: right;
+    list-style-type: none;
+    padding-right: 10rem;
+}
+
+.list-about1 li::before{
+    content: '✓';
+    padding-right: 1rem;
+    font-weight: 700;
+    color: rgb(248, 115, 88); 
+}
+.list-about2 li::before{
+    content: '✓';
+    padding-right: 1rem;
+    font-weight: 700;
+    color: rgb(248, 115, 88);
+}
+
+
+
+.lists{
+    padding-bottom: 1rem;
+}
+
+.sub-sec::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.para{
+    padding-top: 2rem;
+    margin-left: -1.03rem;
+    text-align: left;
+}
+
+.head{
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.4rem solid rgb(248, 115, 88); 
+    letter-spacing: 0.5rem;
+}
+
+.results{
+    height: 5rem;
+    text-align: center;
+    padding: 0.5rem;
+    padding-top: 2.5rem;
+    font-size: medium;
+    color: rgb(248, 115, 88); 
+}
+
+.results h3{
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    color: black;
+}
+
+.travelled{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.places{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.guide{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.sport{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.results::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ######Footer-about##### */
+
+.footer-about{
+    padding: 4rem;
+}
+
+.footer-content{
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    padding-top: 2rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 10px #978d8d;
+}
+
+.footer-content p{
+    display: inline-block;
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+    color: #fff;
+}
+.footer-content a{
+    display: block;
+    float: right;
+    /* margin-left: 30rem; */
+    border: 0.5rem solid white;
+    text-align: center;
+    padding: 0.4rem 3rem;
+    margin: 0 2rem 1rem 2rem;
+}
+
+.footer-content a:hover{
+    background-color: rgb(248, 115, 88);
+}
+
+
+/* #####Contact-Page CSS#### */
+
+.menu{
+    margin-top: 5rem;
+    height: 58rem;
+    padding-bottom: 4rem;
+}
+
+.left-menu{
+    display: block;
+    float: left;
+    background-color: white;
+    width: 48%;
+    height: 100%;
+    padding: 0.8rem;
+}
+
+.right-menu{
+    display: block;
+    float: right;
+    background-color: white;
+    width: 48%;
+    height: 100%;
+    padding: 0.8rem;
+}
+
+.menu p{
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 0;
+    letter-spacing: 0.1rem;
+    color: grey;
+}
+
+.menu span{
+    font-size: medium;
+    letter-spacing: 0.2rem;
+}
+.right-menu span{
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+}
+
+.menu::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact-line::after{
+    content: '';
+    display: block;
+    border: 0.3rem solid  rgb(248, 115, 88);
+}
+
+.contact-img img{
+    width: 100%;
+}
+
+.menu i{
+    font-size: medium;
+    padding-right: 0.5rem;
+    color: rgb(248, 115, 88);
+}
+
+form label{
+    display: block;
+    font-size: 1.3rem;
+}
+
+form label::after{
+    content: '*';
+    color: rgb(248, 115, 88);;
+}
+
+form input{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.btn{
+    width: 30%;
+    margin: 2rem;
+    margin-left: 15rem;
+    padding: 1rem 1.5rem;
+    background-color:rgb(248, 115, 88);
+    color: #fff;
+    border: 0.1rem solid white;
+}
+
+.btn:hover{
+    background-color:rgb(200, 115, 88);
+}
+
+
+/* ########################################### MEDIA-QUERIES ################################################# */
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    .logo, .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .row{
+        margin-bottom: 10rem;
+        font-size: 0.2rem;
+        height: auto;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        background-color: #fff;
+        height: 100%;
+    }
+
+    .btn-secondary{
+        border: 2px solid black;
+        border-radius: 10rem;
+        font-size: 1.5rem;
+        padding: 0.1rem 1rem;
+        margin-top: 0.5rem;
+        font-weight: 400;
+    }
+
+    .feature{
+        margin-bottom: 2rem;
+        height: 65rem;
+    }
+
+    .feature-row1, .feature-row3{
+        float: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(36, 35, 35);
+        color: white;
+    }
+    .feature-row2{
+        float: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(248, 115, 88);
+        color: white;
+    }
+
+    .feature-row i{
+        padding-left: 6rem;
+    }
+
+
+
+    .footer{
+        height: auto;
+        background-color: rgb(36, 35, 35);
+        padding: 2.5rem 0 0 0;
+        color: white;
+    }
+    
+    .footer .p1{
+        font-size: x-large;
+        padding-left: 0.5rem;
+        margin-left: 22rem;
+    }
+    
+    .footer i{
+        font-size: x-large;
+    }
+    
+
+    .logo-about{
+        float: none;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .items-about{
+        float: none;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+
+    .list-about1{
+        padding-left: 4rem;
+    }
+    .list-about2{
+        padding-right: 5rem;
+    }
+    .footer-content a{
+        display: block;
+        border: 0.5rem solid white;;
+        padding: 0.4rem 3rem;
+        margin: 0 18rem 2rem 2rem;
+    }
+    
+    .menu{
+        margin-top: 5rem;
+        height: auto;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+    
+    .left-menu, .right-menu{
+        display: block;
+        float: none;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+    }
+    textarea{
+        width: 100%;
+    }
+    .btn{
+        margin-left: 20rem;
+    }
+  
+}
+
+@media (min-width:501px) and (max-width:1024px){
+    html{
+        font-size: 75%;
+    }
+    .logo, .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .row{
+        margin-bottom: 10rem;
+        font-size: 0.2rem;
+        height: auto;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        background-color: #fff;
+        height: 100%;
+    }
+
+    .btn-secondary{
+        border: 2px solid black;
+        border-radius: 10rem;
+        font-size: 1.5rem;
+        padding: 0.1rem 1rem;
+        margin-top: 0.5rem;
+        font-weight: 400;
+    }
+
+    .feature{
+        margin-bottom: 2rem;
+        height: 65rem;
+    }
+
+    .feature-row1, .feature-row3{
+        float: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(36, 35, 35);
+        color: white;
+    }
+    .feature-row2{
+        float: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(248, 115, 88);
+        color: white;
+    }
+
+    .feature-row i{
+        padding-left: 6rem;
+    }
+
+
+
+    .footer{
+        height: auto;
+        background-color: rgb(36, 35, 35);
+        padding: 2.5rem 0 0 0;
+        color: white;
+    }
+    
+    .footer .p1{
+        font-size: x-large;
+        padding-left: 0.5rem;
+        margin-left: 22rem;
+    }
+    
+    .footer i{
+        font-size: x-large;
+    }
+    
+
+    .logo-about{
+        float: none;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .items-about{
+        float: none;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+
+    .list-about1{
+        padding-left: 4rem;
+    }
+    .list-about2{
+        padding-right: 5rem;
+    }
+    .footer-content a{
+        display: block;
+        border: 0.5rem solid white;;
+        padding: 0.4rem 3rem;
+        margin: 0 18rem 2rem 2rem;
+    }
+    
+    .menu{
+        margin-top: 5rem;
+        height: auto;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+    
+    .left-menu, .right-menu{
+        display: block;
+        float: none;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+    }
+    textarea{
+        width: 100%;
+    }
+    .btn{
+        margin-left: 20rem;
+    }
+}
+
+
+@media (orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
